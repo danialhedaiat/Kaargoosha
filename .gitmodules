@@ -1,0 +1,6 @@
+[submodule "Kaargoosha-BaleBot"]
+	path = Kaargoosha-BaleBot
+	url = https://github.com/danialhedaiat/Kaargoosha-BaleBot.git
+[submodule "Kaargoosha-FastAPI"]
+	path = Kaargoosha-FastAPI
+	url = https://github.com/danialhedaiat/Kaargoosha-FastAPI.git
