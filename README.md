@@ -25,7 +25,7 @@ This is a microservice project split across two repositories.
 
 ![Kaargoosha architecture](docs/diagrams/architecture.svg)
 
-The bot publishes a message — `user.create`, `loan.create`, `deposit.approve`, and so on — onto RabbitMQ and waits for a correlated reply. The FastAPI worker consumes that message, runs the corresponding service logic, and either replies synchronously or, for longer-running outcomes like an admin decision, pushes an asynchronous notification back onto the queue (`notify.loan_approved`, `notify.loan_rejected`) for the bot to deliver to the right chat.
+The bot publishes a message — `user.create`, `loan.create`, `receipt.approve`, and so on — onto RabbitMQ and waits for a correlated reply. The FastAPI worker consumes that message, runs the corresponding service logic, and either replies synchronously or, for longer-running outcomes like an admin decision, pushes an asynchronous notification back onto the queue (`notify.loan_approved`, `notify.loan_rejected`) for the bot to deliver to the right chat.
 
 ---
 
